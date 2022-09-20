@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /* colors depend on project */
+  --primary-clr: #3c6f9b;
+  --secondary-clr: #294f66;
+  --accent-clr: #5cb0e5;
+  --text-clr: #666666;
+  --text-clr-light: #ddd;
+  --whitesmoke: whitesmoke;
+  --white: #ffffff;
+
+  --bg-clr-dark: #252525;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  height: 100%;
+}
+
+body {
+  /* so the footer sticks to the bottom of page with margin-top: auto; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  position: relative;
+}
+
+h1 {
+  font-family: "Simply Rounded Bold";
+  letter-spacing: 0.5vw;
+}
+
+h2 {
+  font-family: "Simply Rounded Regular";
+  letter-spacing: 0.3vw;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Simply Rounded Regular";
+}
+
+p,
+a,
+input {
+  font-family: Roboto, sans-serif;
+}
+
+/* names of pages */
+h1 {
+  margin: 1.5rem;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: min(6rem, 14vw);
+
+  color: var(--primary-clr);
+}
+
+/* names of sections */
+h2 {
+  margin: 1.5rem;
+  padding-top: 3rem;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: min(5rem, 10vw);
+
+  color: var(--primary-clr);
+}
+
+/* names of subsections */
+h3 {
+  margin: 1rem;
+  padding-top: 2rem;
+
+  text-align: center;
+  font-size: min(3.75rem, 8vw);
+
+  color: var(--secondary-clr);
+}
+
+/* other titles (posts etc) */
+h4 {
+  font-size: min(1.625rem, 5vw);
+
+  color: var(--accent-clr);
+}
+
+p,
+input {
+  font-size: min(1.25rem, 3.75vw);
+
+  color: var(--text-clr);
+}
+
+a {
+  color: var(--accent-clr);
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  /* names of pages */
+  h1 {
+    margin: 1rem;
+  }
+
+  /* names of sections */
+  h2 {
+    margin: 0.75rem;
+    padding-top: 1.5rem;
+  }
+
+  /* names of subsections */
+  h3 {
+    margin: 0.5rem;
+    padding-top: 1rem;
+  }
+}
+
+.subheading-hr {
+  width: 40%;
+  margin: 1rem auto;
+  border: none;
+  border-top: min(1rem, 3vw) dotted var(--primary-clr);
+}
+
+.background-image {
+  z-index: -9999;
+
+  background-image: url(../img/EBEC-Final_background.png);
+  background-size: 100vw;
+
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.1;
+}
