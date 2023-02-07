@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Ante Balaić-Marmun",
+    "function": "Final Round Main Organiser",
+    "email": "ante.balaic-marmun@BEST.hr",
+    "tel": "+385 99 695 5432",
+    "imgUrl": "../img/people/person-Ante_BM.jpg"
+  },
+  {
+    "name": "Dunja Olbina",
+    "function": "Vice President for Services",
+    "email": "dunja.olbina@BEST-eu.org",
+    "tel": "+381 64 497 6001",
+    "imgUrl": "../img/people/person-Dunja_O.jpg"
+  },
+  {
+    "name": "Maria Lučić",
+    "function": "Final Round Main Organiser",
+    "email": "maria.lucic@BEST.hr",
+    "tel": "+385 99 768 6462",
+    "imgUrl": "../img/people/person-Maria_L.jpg"
+  },
+  {
+    "name": "Mihaela Voća",
+    "function": "President of Local BEST Group Zagreb",
+    "email": "mihaela.voca@BEST.hr",
+    "tel": "+385 98 756 160",
+    "imgUrl": "../img/people/person-Mihaela_V.jpg"
+  }
+]

@@ -7,15 +7,14 @@
 
 :root {
   /* colors depend on project */
-  --primary-clr: #3c6f9b;
-  --secondary-clr: #294f66;
-  --accent-clr: #5cb0e5;
-  --text-clr: #666666;
-  --text-clr-light: #ddd;
+  --primary-clr: #009696;
+  --secondary-clr: #008686;
+  --accent-clr: #00bf9a;
+  --text-clr: #ddd;
   --whitesmoke: whitesmoke;
   --white: #ffffff;
 
-  --bg-clr-dark: #252525;
+  --bg-clr-dark: #000;
 }
 
 html {
@@ -34,12 +33,12 @@ body {
 }
 
 h1 {
-  font-family: "Simply Rounded Bold";
+  font-family: "Neuropol X";
   letter-spacing: 0.5vw;
 }
 
 h2 {
-  font-family: "Simply Rounded Regular";
+  font-family: "Neuropol X";
   letter-spacing: 0.3vw;
 }
 
@@ -47,18 +46,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Simply Rounded Regular";
+  font-family: "Neuropol X";
+  font-weight: bold;
 }
 
 p,
 a,
 input {
-  font-family: Roboto, sans-serif;
+  font-family: "Work sans", Roboto, sans-serif;
+  letter-spacing: 0.05vw;
 }
 
 /* names of pages */
 h1 {
-  margin: 1.5rem;
+  margin-top: min(5rem, 7vw);
+  margin-bottom: min(1.5rem, 3vw);
 
   text-align: center;
   text-transform: uppercase;
@@ -94,7 +96,7 @@ h3 {
 
 /* other titles (posts etc) */
 h4 {
-  font-size: min(1.625rem, 5vw);
+  font-size: min(1.5rem, 3vw);
 
   color: var(--accent-clr);
 }
@@ -115,11 +117,6 @@ a {
 }
 
 @media only screen and (max-width: 450px) {
-  /* names of pages */
-  h1 {
-    margin: 1rem;
-  }
-
   /* names of sections */
   h2 {
     margin: 0.75rem;
@@ -135,19 +132,60 @@ a {
 
 .subheading-hr {
   width: 40%;
-  margin: 1rem auto;
+  margin: min(1rem, 2vw) auto;
   border: none;
-  border-top: min(1rem, 3vw) dotted var(--primary-clr);
+  border-top: min(1rem, 3vw) double var(--primary-clr);
+  border-radius: 20%;
 }
 
-.background-image {
-  z-index: -9999;
+/* background */
+#particles-js {
+  width: 100%;
+  height: 99%;
 
-  background-image: url(../img/EBEC-Final_background.png);
-  background-size: 100vw;
+  z-index: -9999;
 
   position: absolute;
   inset: 0;
 
-  opacity: 0.1;
+  background-color: var(--bg-clr-dark);
+}
+
+/* Back to top button */
+.backToTopBtn {
+  position: fixed;
+  right: min(3rem, 5vw);
+  bottom: min(3rem, 5vw);
+
+  width: min(5rem, calc(10vw + 0.5rem));
+  aspect-ratio: 1;
+
+  backdrop-filter: blur(1px);
+  border: min(3px, 0.5vw) solid var(--secondary-clr);
+  border-radius: 47% 53% 41% 59% / 83% 81% 19% 17%;
+  cursor: pointer;
+
+  z-index: 9999;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 1024px) {
+  .backToTopBtn:hover,
+  .backToTopBtn:focus {
+    transform: scale(1.2);
+  }
+}
+
+.backToTopBtn > svg {
+  width: 60%;
+
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backToTopBtn > svg path {
+  fill: var(--secondary-clr);
 }

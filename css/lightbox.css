@@ -1,0 +1,36 @@
+img:not(#lightbox) {
+  /* indicator that there is a lightbox */
+  cursor: pointer;
+}
+
+#lightbox {
+  display: none;
+
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  cursor: pointer;
+}
+
+#lightbox.active {
+  display: grid;
+  place-items: center;
+}
+
+#lightbox > img {
+  margin: min(2rem, 4vw);
+
+  max-width: 90vw;
+  max-height: 80vh;
+
+  /* double outline */
+  padding: 2px;
+  background-color: white;
+  border: 3px solid var(--accent-clr);
+  border-radius: min(2rem, 4vw);
+
+  cursor: default;
+}
