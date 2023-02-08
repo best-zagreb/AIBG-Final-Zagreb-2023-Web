@@ -5,7 +5,7 @@ counters.forEach((counter) => {
     const value = +counter.getAttribute("data-value");
     const data = +counter.innerText;
 
-    const time = value / 100;
+    const time = value / 30;
     if (data < value) {
       counter.innerText = Math.ceil(data + time);
       setTimeout(animate, 15);
