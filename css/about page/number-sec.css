@@ -9,21 +9,23 @@
 }
 
 .numbers-s__container {
+  font-size: min(2vw, 0.875rem);
+
   max-width: 120rem;
   margin: auto;
 
-  padding: min(3rem, 6vw) 1rem;
+  padding: 3em 1rem;
 
   display: flex;
-  gap: min(2rem, 2vw);
+  gap: 1.375em;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
 .numbers-s__box {
-  width: min(26rem, 95%);
-  padding: min(3rem, 6vw);
+  width: 22em;
+  padding: 2em 1em;
 
   border-radius: 0.5rem;
 
@@ -37,6 +39,12 @@
   background-color: rgba(128, 128, 128, 0.8);
 
   transition: transform 0.4s ease-in-out;
+}
+
+@media screen and (min-width: 1600px) {
+  .numbers-s__container {
+    font-size: 1.25rem;
+  }
 }
 
 .numbers-s__box:hover {
@@ -54,13 +62,13 @@
 }
 
 .numbers-s__counter {
-  font-size: min(3rem, 8vw);
+  font-size: 2em;
   font-weight: 500;
   color: orange;
 }
 
 .numbers-s__text {
-  font-size: min(1.75rem, 6vw);
+  font-size: 1.5em;
 
   color: whitesmoke;
 }

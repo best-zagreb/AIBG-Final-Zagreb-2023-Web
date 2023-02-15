@@ -17,10 +17,16 @@
 .contact-card {
   width: min(34rem, 90vw);
 
-  font-size: min(1rem, 3vw);
+  font-size: min(0.75rem, 2.25vw);
 
   display: flex;
   gap: min(1rem, 2vw);
+}
+
+@media screen and (min-width: 1600px) {
+  .contact-card {
+    font-size: 1rem;
+  }
 }
 
 .contact-card > div {
